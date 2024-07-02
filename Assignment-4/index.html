@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section>
+        <form action="./submit.html">
+          <fieldset style="width: fit-content">
+            <legend><b>Personal Information Form</b></legend>
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              name="fname"
+              placeholder="Enter your First Name"
+              required
+            />
+            <br /><br />
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              name="lname"
+              placeholder="Enter your Last Name"
+            />
+            <br /><br />
+            <label for="age">Age</label>
+            <input type="number" name="age" placeholder="Enter your Age" />
+            <br /><br />
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" />
+            <br /><br />
+            <label for="gender">Gender</label>
+            <select name="gender">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Others">Others</option>
+            </select>
+
+            <br /><br />
+            <input type="checkbox" name="t&c" />
+            <label for="t&c">I agree to all Terms and Conditions.</label>
+            <br /><br />
+            <label for="email">Email ID</label>
+            <input type="email" name="email" required/>
+            <br /><br />
+            <label for="pswd">Password</label>
+            <input type="password" name="pswd" required />
+            <br /><br />
+            <textarea
+              name="hobby"
+              rows="10"
+              cols="20"
+              placeholder="Tell about your hobbies..."
+            ></textarea>
+            <br /><br />
+            <input type="submit" name="submit" />
+            <input type="reset" name="reset" />
+          </fieldset>
+          <br /><br />
+          <fieldset style="width: fit-content">
+            <legend><b>Login Form</b></legend>
+            <label for="email1">Email ID</label>
+            <input type="email" name="email1" required/>
+            <br /><br />
+            <label for="pswd">Password</label>
+            <input type="password" name="pswd" required />
+            <br /><br />
+            <button>Login</button>
+            <input type="reset" name="reset" />
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
