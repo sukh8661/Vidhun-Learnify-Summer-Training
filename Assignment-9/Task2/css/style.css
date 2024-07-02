@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    flex-wrap: wrap;
+}
+
+.container{
+    display: flex;
+    width: 70%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    margin-left: 15%;
+    margin-top: 10px;   
+}
+
+.box{
+    margin: 5px;
+    width: 23.4%;
+    height: 820px;
+    border: 2px solid #c6c6c6;
+    background-color: white;
+}
+
+.box > img{
+    width: 33%;
+    height: 28%;
+    margin-left: 33%;
+    margin-top: 20px;
+}
+
+.title{
+    width: 80%;
+    text-align: center;
+    margin-top: 18px;
+    margin-left: 10%;
+    font-size: 24px;
+    padding-bottom: 25px;
+}
+
+.price{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.review{
+    text-align: center;
+    font-size: 24px;
+    color: #9ea0a3;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.new{
+    border: 2px dotted grey;
+    border-left: none;
+    border-right: none;
+    padding: 15px;
+    padding-left: 0px;
+    margin-left: 8%;
+    margin-right: 8%;
+    font-size: 24px;
+}
+
+ul{
+    margin-left: 40px;
+    margin-top: 15px;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+ul > li{
+    margin-bottom: 15px;
+}
+
+button{
+    background-color: white;
+    border: 2px solid #f79274;
+    color: #f79274;
+    width: 90%;
+    margin-left: 5%;
+    font-size: 24px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 900px){
+    .box{
+        width: 46.8%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .box{
+        width: 100%;
+    }
+}

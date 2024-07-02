@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    width: 80%;
+    margin-left: 10%;
+    color: #818181;
+  }
+  
+  hr {
+    border: 0;
+    height: 2px;
+    background-color: #ccc;
+    margin: 0;
+    padding: 0;
+    margin-left: 10%;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .left-container {
+    width: 50%; /* isse dono 50-50 me divide honge*/
+    position: relative;
+    margin-top: 10px;
+  }
+  
+  .face-image {
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .right-container {
+    width: 50%;
+  }
+  
+  .right-container > div {
+    display: inline-block;
+    width: 32%;
+    margin: 0px;
+    padding: 10px;
+    vertical-align: top;
+  }
+  
+  .image-container {
+    background-size: cover;
+    height: 60px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .right-container p {
+    padding: 10px;
+    color: #979797;
+    font-size: 18px;
+    height: 775px;
+  }
+
+  .three{
+    background-color: #d5c1ff;
+  }
+
+  @media screen and (max-width: 900px) {
+    .container {
+       flex-direction: column;
+     }
+   
+    .left-container {
+       width: 100%;
+       position: relative;
+     }
+   
+    .face-image {
+       width: 100%; 
+       height: auto;
+       position: relative; 
+     }
+   
+    .right-container {
+       width: 100%;
+     }
+   }
+
+   @media screen and (max-width: 450px) {
+    .right-container{
+        flex-direction: column;
+    }
+
+    .right-container > div {
+        width: 100%;
+        height: auto;
+    }
+   }
